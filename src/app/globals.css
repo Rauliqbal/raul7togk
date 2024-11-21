@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+   html {
+      @apply scroll-smooth;
+   }
+
+   body {
+      @apply bg-black text-white overflow-x-hidden;
+   }
+
+   *::-webkit-scrollbar-thumb {
+      @apply bg-red-400 w-0.5 rounded-full;
+   }
+
+   *::-webkit-scrollbar {
+      @apply w-0;
+   }
+}
+
+.blob {
+   background: conic-gradient(from 2.35rad, #c76000, rgba(7, 29, 228, 0.5));
+}
+
+.linkContainer {
+   perspective: 120px;
+   perspective-origin: bottom;
+}
