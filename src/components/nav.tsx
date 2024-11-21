@@ -17,7 +17,7 @@ const Nav = ({ setIsActive, social }: NavProps) => {
    const MotionLink = motion(Link);
 
    return (
-      <div className="flex justify-between flex-col w-full border-2  h-full px-10 pt-[100px] pb-[50px]">
+      <div className="flex justify-between flex-col w-full  h-full px-10 pt-[100px] pb-[50px]">
          <div className="flex gap-2 flex-col">
             {navLinks.map((link, i) => {
                const { title, href } = link;
