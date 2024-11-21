@@ -8,7 +8,7 @@
    }
 
    body {
-      @apply bg-black text-white overflow-x-hidden;
+      @apply bg-[#07070f] text-white overflow-x-hidden;
    }
 
    *::-webkit-scrollbar-thumb {
@@ -21,7 +21,11 @@
 }
 
 .blob {
-   background: conic-gradient(from 2.35rad, #c76000, rgba(7, 29, 228, 0.5));
+   background: conic-gradient(
+      from 2.35rad,
+      rgba(196, 99, 19, 0.5),
+      rgba(7, 29, 228, 0.5)
+   );
 }
 
 .linkContainer {
