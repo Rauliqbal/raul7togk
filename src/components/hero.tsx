@@ -12,29 +12,27 @@ export const Hero = ({ about }: { about: About }) => {
 
    return (
       <section className="relative flex h-screen w-full flex-col items-center justify-center overflow-hidden ">
+         <span className="blob size-1/4 absolute top-20 left-0 blur-[100px] -z-10" />
+         <span className="blob w-1/4 h-2/3 absolute -right-40 rotate-180 bottom-52 blur-[100px] -z-10" />
+
          {hideLoader ? (
             <PageLoad hideLoader={hideLoader} setHideLoader={setHideLoader} />
          ) : (
             <div className="px-4 md:px-8">
                <div className="flex items-center justify-center flex-col h-[90vh]">
                   <div className="py-6 flex items-center flex-col">
-                     <h1 className="md:text-9xl text-4xl font-bold overflow-hidden">
+                     <h1 className="md:text-9xl text-5xl font-bold overflow-hidden text-center">
                         <SlideIn>
                            MUHAMAD <br />
                            RAUL IQBAL
                         </SlideIn>
                      </h1>
-                     {/* <h1 className="md:text-7xl text-3xl overflow-hidden">
-                        <SlideIn></SlideIn>
-                     </h1> */}
                   </div>
                   <Transition viewport={{ once: true }} className="w-full">
-                     <p className="opacity-70 md:text-xl py-4 w-10/12 md:w-2/3 mx-auto flex flex-wrap justify-center gap-2">
-                        {"I am a developer and designer who has a passion for building responsive, cool looking, and easy to visit website applications."
-                           .split(" ")
-                           .map((word, index) => (
-                              <span key={index}>{word}</span>
-                           ))}
+                     <p className="text-secondary text-center md:text-xl py-4 w-10/12 md:w-2/3 mx-auto flex flex-wrap justify-center gap-2">
+                        I am a developer and designer who has a passion for
+                        building responsive, cool looking, and easy to visit
+                        website applications.
                      </p>
                   </Transition>
                   <Transition viewport={{ once: true }}>
@@ -52,7 +50,8 @@ export const Hero = ({ about }: { about: About }) => {
                </div>
                <div className="flex justify-between">
                   <p className="text-lg font-medium">
-                     BASED IN BEKASI, INDONESIA
+                     BASED IN BEKASI
+                     <span className="text-slate-400">, INDONESIA</span>
                   </p>
                   <p className="text-lg font-medium">
                      FRONT-END DEVELOPER{" "}

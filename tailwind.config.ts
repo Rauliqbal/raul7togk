@@ -15,6 +15,7 @@ const config: Config = {
          colors: {
             white: "#f1f1f1",
             primary: "#525CEB",
+            secondary: "#64748b",
          },
          animation: {
             scroll:

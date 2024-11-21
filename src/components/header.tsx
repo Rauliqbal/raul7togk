@@ -65,7 +65,7 @@ function Button({
             }}
          >
             <motion.div
-               className="bg-primary h-full w-full grid place-items-center text-white"
+               className="bg-black h-full w-full grid place-items-center text-white"
                onClick={() => {
                   toggleMenu();
                }}
