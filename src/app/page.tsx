@@ -17,6 +17,7 @@ import Link from "next/link";
 import { Hero } from "@/components/hero";
 import { ScrollText } from "@/components/scroll-text";
 import { PROJECTS, SOCIAL_MEDIA } from "@/utils/data";
+import Profile from "@/components/profile";
 
 export default async function Home() {
    return (
@@ -30,6 +31,7 @@ export default async function Home() {
          <Hero />
          <ScrollText />
          <Projects data={PROJECTS} />
+         <Profile />
 
          {/* <About about={about} timeline={timeline} />
          <Experience timeline={timeline} /> */}

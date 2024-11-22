@@ -6,14 +6,12 @@ import { ContextProvider } from "@/utils/context";
 import { Cursor } from "./cursor";
 
 export const Providers = ({ children }: { children: ReactNode }) => {
-  return (
-    <>
+   return (
       <SmoothScroll>
-        <ContextProvider>
-          <Cursor />
-          {children}
-        </ContextProvider>
+         <ContextProvider>
+            <Cursor />
+            {children}
+         </ContextProvider>
       </SmoothScroll>
-    </>
-  );
+   );
 };
