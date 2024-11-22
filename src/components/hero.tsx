@@ -1,14 +1,13 @@
 "use client";
 
 import { SlideIn, TextReveal, Transition } from "./ui";
-import { About } from "@/utils/interfaces";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { useState } from "react";
 import { PageLoad } from "./ui/page-load";
 
-export const Hero = ({ about }: { about: About }) => {
-   const [hideLoader, setHideLoader] = useState(true);
+export const Hero = () => {
+   const [hideLoader, setHideLoader] = useState(false); // Default True
 
    return (
       <section className="relative flex h-screen w-full flex-col items-center justify-center overflow-hidden ">
@@ -48,16 +47,16 @@ export const Hero = ({ about }: { about: About }) => {
                      </Link>
                   </Transition>
                </div>
-               <div className="flex justify-between">
+               <Transition className="flex justify-between">
                   <p className="text-lg font-medium">
                      BASED IN BEKASI
-                     <span className="text-slate-400">, INDONESIA</span>
+                     <span className="text-white/40">, INDONESIA</span>
                   </p>
                   <p className="text-lg font-medium">
                      FRONT-END DEVELOPER{" "}
-                     <span className="text-slate-400">+ UI DESIGNER</span>
+                     <span className="text-white/40">+ UI DESIGNER</span>
                   </p>
-               </div>
+               </Transition>
             </div>
          )}
       </section>

@@ -11,30 +11,31 @@ import {
    Transition,
 } from "@/components/ui";
 
-import { UserObject } from "@/utils/interfaces";
+import { Project, UserObject } from "@/utils/interfaces";
 import Experience from "@/components/experience";
 import { ContactUs } from "@/components/contact-us";
 import Link from "next/link";
 import { Hero } from "@/components/hero";
 import { ScrollText } from "@/components/scroll-text";
+import { PROJECTS, SOCIAL_MEDIA } from "@/utils/data";
 
 export default async function Home() {
-   const res = await fetch(
-      "https://portfolio-backend-30mp.onrender.com/api/v1/get/user/65b3a22c01d900e96c4219ae"
-   );
+   // const res = await fetch(
+   //    "https://portfolio-backend-30mp.onrender.com/api/v1/get/user/65b3a22c01d900e96c4219ae"
+   // );
 
-   const { user } = (await res.json()) as UserObject;
-   if (!user) return null;
-   const {
-      about,
-      testimonials,
-      services,
-      skills,
-      projects,
-      social_handles,
-      timeline,
-      email,
-   } = user;
+   // const { user } = (await res.json()) as UserObject;
+   // if (!user) return null;
+   // const {
+   //    about,
+   //    testimonials,
+   //    services,
+   //    skills,
+   //    projects,
+   //    social_handles,
+   //    timeline,
+   //    email,
+   // } = user;
 
    return (
       <main className="relative">
@@ -43,13 +44,15 @@ export default async function Home() {
                <TextReveal className="font-semibold ">ThePortfolio</TextReveal>
             </Link>
          </Transition>
-         <Header social={social_handles} />
-         <Hero about={about} />
+         <Header social={SOCIAL_MEDIA} />
+         <Hero />
          <ScrollText />
-         <About about={about} timeline={timeline} />
-         <Experience timeline={timeline} />
+         <Projects data={PROJECTS} />
+
+         {/* <About about={about} timeline={timeline} />
+         <Experience timeline={timeline} /> */}
          {/* ===SKILLS SECTION=== */}
-         <section id="skills">
+         {/* <section id="skills">
             <ParallaxText baseVelocity={-5}>
                {skills
                   .sort((a, b) => a.sequence - b.sequence)
@@ -92,9 +95,9 @@ export default async function Home() {
                      ) : null
                   )}
             </ParallaxText>
-         </section>
+         </section> */}
          {/* ===SERVICES SECTION=== */}
-         <section className="px-2 py-20 relative" id="services">
+         {/* <section className="px-2 py-20 relative" id="services">
             <span className="blob absolute top-[20%] right-0 w-1/3 h-5/6 blur-[100px] rotate-180 -z-10" />
             <SectionHeading className="md:pl-16 overflow-hidden">
                <SlideIn className="text-white/40">Here&apos;s how</SlideIn>{" "}
@@ -119,11 +122,11 @@ export default async function Home() {
                   <span>Discuss the project</span>
                </div>
             </Transition>
-         </section>
+         </section> */}
          {/* ===PROJECTS SECTION=== */}
-         <Projects data={projects} />
+
          {/* ===TESTIMONIALS SECTION=== */}
-         <section className="py-20 relative" id="testimonials">
+         {/* <section className="py-20 relative" id="testimonials">
             <span className="blob size-1/2 absolute -top-20 left-0 blur-[100px] -z-10" />
             <SectionHeading className="md:pl-28">
                <SlideIn className="text-white/40">What Our</SlideIn> <br />
@@ -136,18 +139,18 @@ export default async function Home() {
                speed="normal"
                direction="left"
             />
-         </section>
+         </section> */}
 
          {/* ===CONTACT US=== */}
          <div
             className="rounded-t-[2rem] md:rounded-t-[3rem] overflow-hidden"
             id="contact"
          >
-            <ContactUs
+            {/* <ContactUs
                email={email}
                about={about}
                social_handle={social_handles}
-            />
+            /> */}
          </div>
       </main>
    );
