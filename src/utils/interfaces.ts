@@ -1,26 +1,3 @@
-export interface UserObject {
-   success: boolean;
-   user: User;
-}
-
-export interface User {
-   about: About;
-   _id: string;
-   username: string;
-   email: string;
-   role: string;
-   timeline: Timeline[];
-   skills: Skill[];
-   youtube: any[];
-
-   social_handles: SocialMedia[];
-   services: Service[];
-   testimonials: Testimonial[];
-   createdAt: string;
-   updatedAt: string;
-   refreshToken: string;
-}
-
 export interface About {
    name: string;
    title: string;
@@ -73,17 +50,17 @@ export interface Service {
    desc: string;
    enabled: boolean;
    _id: string;
-   image: Image;
+   image: string;
 }
 
-export interface Testimonial {
-   image: Image;
-   name: string;
-   review: string;
-   position: string;
-   enabled: boolean;
-   _id: string;
-}
+// export interface Testimonial {
+//    image: Image;
+//    name: string;
+//    review: string;
+//    position: string;
+//    enabled: boolean;
+//    _id: string;
+// }
 
 export interface Timeline {
    company_name: string;
