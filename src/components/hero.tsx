@@ -47,7 +47,7 @@ export const Hero = () => {
                      </Link>
                   </Transition>
                </div>
-               <Transition className="flex justify-between">
+               <Transition className="justify-between hidden md:flex">
                   <p className="text-lg font-medium">
                      BASED IN BEKASI
                      <span className="text-white/40">, INDONESIA</span>

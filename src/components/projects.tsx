@@ -56,7 +56,7 @@ const ProjectContainer = () => {
                   <Transition
                      transition={{ delay: 0.2 + index * 0.1 }}
                      viewport={{ once: true }}
-                     key={project._id}
+                     key={index}
                      onClick={() => {
                         setShowDialog(true);
                         setSingleProject(project);

@@ -1,4 +1,4 @@
-import { SocialMedia } from "./interfaces";
+import { Project, SocialMedia } from "./interfaces";
 
 export const USER = {
    user: {
@@ -775,7 +775,7 @@ export const USER = {
    },
 };
 
-export const PROJECTS = [
+export const PROJECTS: Project[] = [
    {
       liveurl: "https://azurakit.vercel.app",
       githuburl: "#",
@@ -798,45 +798,29 @@ export const PROJECTS = [
    },
 ];
 
-export const SOCIAL_MEDIA: SocialMedia = [
+export const SOCIAL_MEDIA: SocialMedia[] = [
    {
       platform: "Instagram",
       url: "#",
-      image: {
-         public_id: "1708718250873-3038n7.webp",
-         url: "https://portfolio-image-store.s3.ap-south-1.amazonaws.com/1708718250873-3038n7.webp",
-      },
+      image: "https://portfolio-image-store.s3.ap-south-1.amazonaws.com/1708718250873-3038n7.webp",
       enabled: true,
-      _id: "65b3ea4feb20546ae6d4641d",
    },
    {
       platform: "LinkedIn",
       url: "#",
-      image: {
-         public_id: "1708718263294-2lfj67.webp",
-         url: "https://portfolio-image-store.s3.ap-south-1.amazonaws.com/1708718263294-2lfj67.webp",
-      },
+      image: "https://portfolio-image-store.s3.ap-south-1.amazonaws.com/1708718263294-2lfj67.webp",
       enabled: true,
-      _id: "65b3e99beb20546ae6d463c2",
    },
    {
       enabled: true,
       platform: "Twitter",
       url: "#",
-      image: {
-         public_id: "1708718328750-d4jsq.webp",
-         url: "https://portfolio-image-store.s3.ap-south-1.amazonaws.com/1708718328750-d4jsq.webp",
-      },
-      _id: "65b3e47cb48589dfcae185bd",
+      image: "https://portfolio-image-store.s3.ap-south-1.amazonaws.com/1708718328750-d4jsq.webp",
    },
    {
       enabled: true,
       platform: "Facebook",
       url: "#",
-      image: {
-         public_id: "1708718346601-xldm.webp",
-         url: "https://portfolio-image-store.s3.ap-south-1.amazonaws.com/1708718346601-xldm.webp",
-      },
-      _id: "65b3e43cb48589dfcae1856c",
+      image: "https://portfolio-image-store.s3.ap-south-1.amazonaws.com/1708718346601-xldm.webp",
    },
 ];

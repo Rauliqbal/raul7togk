@@ -13,7 +13,7 @@ export interface User {
    skills: Skill[];
    youtube: any[];
 
-   social_handles: SocialHandle[];
+   social_handles: SocialMedia[];
    services: Service[];
    testimonials: Testimonial[];
    createdAt: string;
@@ -54,20 +54,17 @@ export interface Project {
    liveurl: string;
    githuburl: string;
    title: string;
-   sequence: number;
+   category: string;
    image: string;
    description: string;
    techStack: string[];
-   _id: string;
-   enabled: boolean;
 }
 
 export interface SocialMedia {
    platform: string;
    url: string;
-   image: Image;
+   image: string;
    enabled: boolean;
-   _id: string;
 }
 
 export interface Service {
