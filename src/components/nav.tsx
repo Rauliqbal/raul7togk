@@ -94,16 +94,16 @@ export const navLinks = [
       href: "/",
    },
    {
+      title: "Projects",
+      href: "#projects",
+   },
+   {
       title: "About",
       href: "#about",
    },
    {
       title: "Services",
       href: "#services",
-   },
-   {
-      title: "Projects",
-      href: "#projects",
    },
    {
       title: "Contact",

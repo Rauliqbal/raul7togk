@@ -779,7 +779,7 @@ export const PROJECTS: Project[] = [
    {
       liveurl: "https://azurakit.vercel.app",
       githuburl: "#",
-      title: "Azurakit - Web Template & Design Resources",
+      title: "Azurakit",
       category: "Marketplace",
       image: "https://sfveuafbpwhmzfiorbis.supabase.co/storage/v1/object/public/project/azurakit-preview.png",
       description:
@@ -787,10 +787,10 @@ export const PROJECTS: Project[] = [
       techStack: ["React JS", " Next JS ", " Tailwind CSS "],
    },
    {
-      liveurl: "#",
+      liveurl: "https://movieraa.vercel.app",
       githuburl: "#",
-      title: "Movieeraa - Sreaming Movies",
-      category: "Marketplace",
+      title: "Movieeraa",
+      category: "Web Development",
       image: "https://sfveuafbpwhmzfiorbis.supabase.co/storage/v1/object/public/project/movieraa-preview.png",
       description:
          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",

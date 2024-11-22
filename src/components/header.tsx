@@ -5,10 +5,10 @@ import Nav from "./nav";
 import { TextReveal, Transition } from "./ui";
 import { useMediaQuery } from "@/utils/useMediaQuery";
 import { menu } from "@/utils/anim";
-import { SocialHandle } from "@/utils/interfaces";
+import { SocialMedia } from "@/utils/interfaces";
 
 interface HeaderProps {
-   social: SocialHandle[];
+   social: SocialMedia[];
 }
 const Header = ({ social }: HeaderProps) => {
    const [isActive, setIsActive] = useState(false);
