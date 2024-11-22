@@ -6,11 +6,11 @@ import { perspective, slideIn } from "@/utils/anim";
 import { TextReveal } from "./ui";
 import { ArrowRight } from "lucide-react";
 import { Dispatch, SetStateAction } from "react";
-import { SocialHandle } from "@/utils/interfaces";
+import { SocialMedia } from "@/utils/interfaces";
 
 interface NavProps {
    setIsActive: Dispatch<SetStateAction<boolean>>;
-   social: SocialHandle[];
+   social: SocialMedia[];
 }
 
 const Nav = ({ setIsActive, social }: NavProps) => {
@@ -23,7 +23,7 @@ const Nav = ({ setIsActive, social }: NavProps) => {
                const { title, href } = link;
                return (
                   <div
-                     key={`b_${i}`}
+                     key={i}
                      className="linkContainer"
                      onClick={() => setIsActive(false)}
                   >
@@ -65,7 +65,7 @@ const Nav = ({ setIsActive, social }: NavProps) => {
          </div>
          <motion.div className="flex flex-wrap">
             {social.map((link, i) => {
-               const { platform, _id, url } = link;
+               const { platform, url } = link;
                return (
                   <MotionLink
                      href={url}
@@ -75,7 +75,7 @@ const Nav = ({ setIsActive, social }: NavProps) => {
                      initial="initial"
                      animate="enter"
                      exit="exit"
-                     key={_id}
+                     key={i}
                   >
                      <TextReveal>{platform}</TextReveal>
                   </MotionLink>

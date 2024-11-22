@@ -20,7 +20,7 @@ interface ProjectProps {
 const Projects = ({ data }: ProjectProps) => {
    return (
       <ProjectsProvider data={data}>
-         <section className="md:p-8 p-4 relative" id="projects">
+         <section className="md:px-10 px-4 relative" id="projects">
             <SectionHeading className="md:pl-16">
                <SlideIn className="text-white/40">Selected</SlideIn>
                <br />

@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
-import Nav from "./nav";
+import Nav from "./Nav";
 import { TextReveal, Transition } from "./ui";
 import { useMediaQuery } from "@/utils/useMediaQuery";
 import { menu } from "@/utils/anim";

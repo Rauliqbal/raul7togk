@@ -18,6 +18,10 @@
    *::-webkit-scrollbar {
       @apply w-0;
    }
+
+   section {
+      @apply py-20;
+   }
 }
 
 .blob {

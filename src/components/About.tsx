@@ -4,7 +4,7 @@ import React from "react";
 import Paralax from "./ui/paralax";
 import { SectionHeading, SlideIn } from "./ui";
 
-export default function Profile() {
+export default function About() {
    return (
       <section className="px-4 md:px-8 relative">
          <span className="blob absolute top-[20%] left-0 w-1/3 h-5/6 blur-[100px] -z-10" />
@@ -31,8 +31,6 @@ export default function Profile() {
                experience.
             </p>
          </div>
-
-         <div className="h-screen"></div>
       </section>
    );
 }

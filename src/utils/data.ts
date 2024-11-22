@@ -1,4 +1,4 @@
-import { Project, SocialMedia } from "./interfaces";
+import { Project, Service, SocialMedia } from "./interfaces";
 
 export const USER = {
    user: {
@@ -643,40 +643,6 @@ export const USER = {
 
       services: [
          {
-            name: "App Development",
-            charge: "$300",
-            desc: "Design direction for business. Get your business on the next level. We help to create great experiences.",
-            enabled: true,
-            _id: "65f1fd690556c3f887e9d94a",
-            image: {
-               public_id: "portfolio3/1710364293287-4q1ngo.webp",
-               url: "https://portfolio-image-store.s3.ap-south-1.amazonaws.com/portfolio3/1710364293287-4q1ngo.webp",
-            },
-         },
-         {
-            name: "Web & App ",
-            charge: "$600",
-            desc: "I build brands through cultural insights & strategic vision. Custom crafted business solutions.",
-            image: {
-               public_id: "portfolio3/1710357775748-9vwq4q.jpeg",
-               url: "https://portfolio-image-store.s3.ap-south-1.amazonaws.com/portfolio3/1710357775748-9vwq4q.jpeg",
-            },
-            enabled: true,
-            _id: "65f1fd100556c3f887e9d87b",
-         },
-         {
-            name: "UI/UX Solutions",
-            charge: "$399",
-            desc: "Design direction for business. Get your business on the next level. We help to create great experiences.",
-            image: {
-               public_id: "1706290914024-725ytf",
-               url: "https://portfolio-image-store.s3.ap-south-1.amazonaws.com/1706290914024-725ytf",
-               _id: "65b3eee8eb20546ae6d467fe",
-            },
-            _id: "65b3e33db48589dfcae1851d",
-            enabled: true,
-         },
-         {
             name: "Global Marketing",
             charge: "$699",
             desc: "Custom marketing solutions. Get your business on the next level. We provide worldwide marketing.",
@@ -798,29 +764,47 @@ export const PROJECTS: Project[] = [
    },
 ];
 
+export const SERVICES: Service[] = [
+   {
+      name: "Web Development",
+      desc: "Craft intuitive navigation that makes features accessible. Choose layouts and graphics that fit your app's personality.",
+      image: "https://portfolio-image-store.s3.ap-south-1.amazonaws.com/portfolio3/1710364293287-4q1ngo.webp",
+   },
+   {
+      name: "App Development",
+      desc: "I build brands through cultural insights & strategic vision. Custom crafted business solutions.",
+      image: "https://portfolio-image-store.s3.ap-south-1.amazonaws.com/portfolio3/1710357775748-9vwq4q.jpeg",
+   },
+   {
+      name: "UI/UX Designer",
+      desc: "Design direction for business. Get your business on the next level. We help to create great experiences.",
+      image: "https://portfolio-image-store.s3.ap-south-1.amazonaws.com/1706290914024-725ytf",
+   },
+];
+
 export const SOCIAL_MEDIA: SocialMedia[] = [
    {
       platform: "Instagram",
-      url: "#",
+      url: "https://github.com/Rauliqbal",
       image: "https://portfolio-image-store.s3.ap-south-1.amazonaws.com/1708718250873-3038n7.webp",
       enabled: true,
    },
    {
       platform: "LinkedIn",
-      url: "#",
+      url: "https://www.linkedin.com/in/muhamad-raul-iqbal/",
       image: "https://portfolio-image-store.s3.ap-south-1.amazonaws.com/1708718263294-2lfj67.webp",
       enabled: true,
    },
    {
       enabled: true,
-      platform: "Twitter",
-      url: "#",
+      platform: "Dribble",
+      url: "https://dribbble.com/Rauliqbal",
       image: "https://portfolio-image-store.s3.ap-south-1.amazonaws.com/1708718328750-d4jsq.webp",
    },
    {
       enabled: true,
-      platform: "Facebook",
-      url: "#",
+      platform: "Youtube",
+      url: "https://www.youtube.com/channel/UCklGTRJJjc00lK-qF3L_CRQ",
       image: "https://portfolio-image-store.s3.ap-south-1.amazonaws.com/1708718346601-xldm.webp",
    },
 ];

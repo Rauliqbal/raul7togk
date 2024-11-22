@@ -57,9 +57,6 @@ const Filters = () => {
                </Button>
             </Transition>
          ))}
-         <Transition viewport={{ once: true }}>
-            <Sort />
-         </Transition>
       </div>
    );
 };

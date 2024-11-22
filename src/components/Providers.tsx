@@ -1,9 +1,9 @@
 "use client";
 
 import { ReactNode } from "react";
-import SmoothScroll from "./smooth-scroll";
+import SmoothScroll from "./SmoothScroll";
 import { ContextProvider } from "@/utils/context";
-import { Cursor } from "./cursor";
+import { Cursor } from "./Cursor";
 
 export const Providers = ({ children }: { children: ReactNode }) => {
    return (

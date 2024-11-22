@@ -3,7 +3,7 @@ import Marquee from "./ui/marquee";
 
 export function ScrollText() {
    return (
-      <section className="overflow-hidden py-6">
+      <section className="overflow-hidden py-8">
          <div className="relative flex flex-col items-center justify-center overflow-hidden py-3 bg-gradient-to-br from-primary to-indigo-400 -rotate-1">
             <Marquee className="[--duration:20s]">
                <span className="px-4 font-bold">WEB DEVELOPMENT</span>

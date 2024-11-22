@@ -46,10 +46,7 @@ export interface SocialMedia {
 
 export interface Service {
    name: string;
-   charge: string;
    desc: string;
-   enabled: boolean;
-   _id: string;
    image: string;
 }
 

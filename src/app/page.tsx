@@ -1,6 +1,6 @@
-import About from "@/components/about";
-import Header from "@/components/header";
-import Projects from "@/components/projects";
+import About from "@/components/About";
+import Header from "@/components/Header";
+import Projects from "@/components/Projects";
 import Testimonials from "@/components/testimonials";
 import {
    HoverImageLink,
@@ -12,12 +12,12 @@ import {
 } from "@/components/ui";
 
 import Experience from "@/components/experience";
-import { ContactUs } from "@/components/contact-us";
+import { ContactUs } from "@/components/ContactUs";
 import Link from "next/link";
-import { Hero } from "@/components/hero";
+import { Hero } from "@/components/Hero";
 import { ScrollText } from "@/components/scroll-text";
 import { PROJECTS, SOCIAL_MEDIA } from "@/utils/data";
-import Profile from "@/components/profile";
+import Service from "@/components/Service";
 
 export default async function Home() {
    return (
@@ -31,9 +31,10 @@ export default async function Home() {
          <Hero />
          <ScrollText />
          <Projects data={PROJECTS} />
-         <Profile />
+         <About />
+         <Service />
 
-         {/* <About about={about} timeline={timeline} />
+         {/*
          <Experience timeline={timeline} /> */}
          {/* ===SKILLS SECTION=== */}
          {/* <section id="skills">
@@ -81,32 +82,7 @@ export default async function Home() {
             </ParallaxText>
          </section> */}
          {/* ===SERVICES SECTION=== */}
-         {/* <section className="px-2 py-20 relative" id="services">
-            <span className="blob absolute top-[20%] right-0 w-1/3 h-5/6 blur-[100px] rotate-180 -z-10" />
-            <SectionHeading className="md:pl-16 overflow-hidden">
-               <SlideIn className="text-white/40">Here&apos;s how</SlideIn>{" "}
-               <br />
-               <SlideIn>I can help you</SlideIn>
-            </SectionHeading>
-            <div className="mx-auto pt-10">
-               {services.map((service) => (
-                  <Transition key={service._id}>
-                     <HoverImageLink
-                        heading={service.name}
-                        href=""
-                        price={service.charge}
-                        imgSrc={service.image.url}
-                        subheading={service.desc}
-                     />
-                  </Transition>
-               ))}
-            </div>
-            <Transition className="flex items-center py-10 md:hidden">
-               <div className="p-4 rounded-full border border-white/50">
-                  <span>Discuss the project</span>
-               </div>
-            </Transition>
-         </section> */}
+
          {/* ===PROJECTS SECTION=== */}
 
          {/* ===TESTIMONIALS SECTION=== */}
