@@ -2,18 +2,22 @@
 
 import React from "react";
 import Paralax from "./ui/paralax";
+import { SectionHeading, SlideIn } from "./ui";
 
 export default function Profile() {
    return (
-      <div>
+      <section className="px-4 md:px-8 relative">
+         <span className="blob absolute top-[20%] left-0 w-1/3 h-5/6 blur-[100px] -z-10" />
+
          <div className="flex justify-center my-10">
-            <p className="text-[7.5vw] uppercase text-center max-w-[50vw] leading-none">
-               MORE ABOUT <br />
-               RAUL IQBAL
-            </p>
+            <SectionHeading className="md:pl-16 text-center">
+               <SlideIn className="text-white/40">MORE ABOUT</SlideIn>
+               <br />
+               <SlideIn>RAUL IQBAL</SlideIn>
+            </SectionHeading>
          </div>
          <Paralax />
-         <div className="flex flex-col justify-center my-10 max-w-[50vw] mx-auto">
+         <div className="flex flex-col justify-center my-10 max-w-[60rem]  mx-auto">
             <p className="text-3xl font-bold tracking-wide leading-relaxed uppercase text-center  ">
                I&apos;M AN FRONT-END DEVELOPER AND UI/UX DESIGNER. MY PASSION IS
                BUILDING RESPONSIVE WEBSITE APPLICATIONS THAT LOOK COOL AND ARE
@@ -27,7 +31,8 @@ export default function Profile() {
                experience.
             </p>
          </div>
+
          <div className="h-screen"></div>
-      </div>
+      </section>
    );
 }
