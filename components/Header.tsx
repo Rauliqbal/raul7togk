@@ -77,7 +77,7 @@ function Button({
                }}
             >
                <motion.div
-                  className="bg-black h-full w-full grid place-items-center text-white"
+                  className="bg-gradient-to-br from-violet-400 to-primary h-full w-full grid place-items-center text-white"
                   onClick={() => {
                      toggleMenu();
                   }}

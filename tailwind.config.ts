@@ -11,6 +11,7 @@ export default {
          fontFamily: {
             "instrument-sans": ["var(--font-instrument-sans)"],
             "inter-thin": ["var(--font-inter-tight)"],
+            "yellow-tail": ["var(--font-yellow-tail)"],
          },
          container: {
             center: true,

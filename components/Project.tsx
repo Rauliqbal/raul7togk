@@ -69,7 +69,7 @@ const ProjectContainer = () => {
                   ))}
             </motion.div>
          </Transition>
-         <div className="grid place-items-center py-8">
+         {/* <div className="grid place-items-center py-8">
             {filteredProjects.length > numProjectToShow && (
                <Button onClick={() => setShowMore(!showMore)}>
                   <TextReveal>
@@ -77,7 +77,7 @@ const ProjectContainer = () => {
                   </TextReveal>
                </Button>
             )}
-         </div>
+         </div> */}
          {/* <Dialog showDialog={showDialog} setShowDialog={setShowDialog} /> */}
       </AnimatePresence>
    );

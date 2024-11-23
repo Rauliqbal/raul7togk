@@ -1,6 +1,7 @@
 import About from "@/components/About";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
+import Motivation from "@/components/Motivation";
 import Projects from "@/components/Project";
 import ScrollText from "@/components/ScrollText";
 import Service from "@/components/Service";
@@ -17,6 +18,7 @@ export default function Home() {
          <About />
          <VelocityText />
          <Service />
+         <Motivation />
          <div className="h-screen"></div>
       </>
    );

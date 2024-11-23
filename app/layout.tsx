@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Provider from "@/components/ui/Provider";
-import { Instrument_Sans, Inter_Tight } from "next/font/google";
+import { Instrument_Sans, Inter_Tight, Yellowtail } from "next/font/google";
 
 export const metadata: Metadata = {
    title: "Rauliqbal - Front-End Dev and UI Designer",
@@ -21,6 +21,11 @@ const interTight = Inter_Tight({
    variable: "--font-inter-tight",
 });
 
+const yelloTail = Yellowtail({
+   weight: "400",
+   variable: "--font-yellow-tail",
+});
+
 export default function RootLayout({
    children,
 }: Readonly<{
@@ -29,7 +34,7 @@ export default function RootLayout({
    return (
       <html
          lang="en"
-         className={`${instrumentSans.variable} ${interTight.variable} `}
+         className={`${instrumentSans.variable} ${interTight.variable} ${yelloTail.variable} `}
       >
          <body>
             <Provider>{children}</Provider>
