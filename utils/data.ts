@@ -1,4 +1,4 @@
-import { Project, Service, SocialMedia } from "./interfaces";
+import { Project, Service, Skill, SocialMedia } from "./interfaces";
 
 export const USER = {
    user: {
@@ -160,26 +160,10 @@ export const USER = {
          {
             enabled: true,
             name: "C++",
-            sequence: 17,
-            percentage: 87,
-            image: {
-               public_id: "1706288734207-4rlz3m",
-               url: "https://portfolio-image-store.s3.ap-south-1.amazonaws.com/1706288734207-4rlz3m",
-               _id: "65b3e661b48589dfcae187f8",
-            },
-            _id: "65b3e661b48589dfcae187f7",
          },
          {
             enabled: true,
             name: "Python",
-            sequence: 16,
-            percentage: 86,
-            image: {
-               public_id: "1706288708710-nrq74s",
-               url: "https://portfolio-image-store.s3.ap-south-1.amazonaws.com/1706288708710-nrq74s",
-               _id: "65b3e645b48589dfcae187a3",
-            },
-            _id: "65b3e645b48589dfcae187a2",
          },
          {
             enabled: true,
@@ -784,6 +768,36 @@ export const SERVICES: Service[] = [
       name: "UI/UX Designer",
       desc: "Design direction for business. Get your business on the next level. We help to create great experiences.",
       image: "uiux-designer.webp",
+   },
+];
+
+export const SKILLS: Skill[] = [
+   {
+      name: "Javascript",
+   },
+   {
+      name: "Tailwind CSS",
+   },
+   {
+      name: "React JS",
+   },
+   {
+      name: "Vue JS",
+   },
+   {
+      name: "Next JS",
+   },
+   {
+      name: "Nuxt JS",
+   },
+   {
+      name: "Tailwind CSS",
+   },
+   {
+      name: "NODE JS",
+   },
+   {
+      name: "Express js",
    },
 ];
 

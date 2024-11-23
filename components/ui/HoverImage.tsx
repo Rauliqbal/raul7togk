@@ -81,7 +81,7 @@ export default function HoverImageLink({
                initial: { scale: 0, rotate: "-12.5deg" },
                whileHover: { scale: 1, rotate: "12.5deg" },
             }}
-            transition={{ type: "spring" }}
+            transition={{ type: "tween" }}
             src={imgSrc}
             className="absolute z-0 h-24 w-32 rounded-lg object-cover md:h-48 md:w-84  lg:h-64 lg:w-96 max-md:hidden"
             alt={`Image representing a link for ${heading}`}

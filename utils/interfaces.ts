@@ -18,12 +18,7 @@ export interface Avatar {
 }
 
 export interface Skill {
-   enabled: boolean;
    name: string;
-   sequence: number;
-   percentage: number;
-   image: Avatar;
-   _id: string;
 }
 
 export interface Project {

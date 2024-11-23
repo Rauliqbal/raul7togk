@@ -4,6 +4,7 @@ import Hero from "@/components/Hero";
 import Projects from "@/components/Project";
 import ScrollText from "@/components/ScrollText";
 import Service from "@/components/Service";
+import VelocityText from "@/components/VelocityText";
 import { PROJECTS, SOCIAL_MEDIA } from "@/utils/data";
 
 export default function Home() {
@@ -15,7 +16,7 @@ export default function Home() {
          <Projects data={PROJECTS} />
          <About />
          <Service />
-
+         <VelocityText />
          <div className="h-screen"></div>
       </>
    );
