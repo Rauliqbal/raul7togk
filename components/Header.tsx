@@ -60,7 +60,9 @@ function Button({
          <div className="fixed md:top-10 top-6 md:left-8 left-6 z-30 hover:text-white/80 text-white/40">
             <Transition>
                <Link href="/">
-                  <TextReveal className="font-semibold ">Rauliqbal</TextReveal>
+                  <TextReveal className="font-semibold font-instrument-sans">
+                     RAULIQBAL
+                  </TextReveal>
                </Link>
             </Transition>
          </div>

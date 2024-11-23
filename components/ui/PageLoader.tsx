@@ -33,12 +33,12 @@ export const PageLoader = ({ setHideLoader }: PageLoadProps) => {
          onAnimationComplete={() => setHideLoader(false)}
          className="fixed top-0 left-0 z-[9999] w-full h-full bg-black"
       >
-         <div className="p-4 md:p-10 flex flex-col md:justify-between max-md:gap-8 w-full h-full">
+         <div className="p-4 md:p-10 flex flex-col md:justify-between max-md:gap-8 w-full h-full font-instrument-sans">
             <span className="blob size-1/2 absolute top-20 left-0 blur-[100px]" />
 
             <span className="font-semibold text-white/40">RAULIQBAL</span>
             <div className="flex flex-col max-md:justify-between max-md:h-full">
-               <p className="text-3xl md:text-6xl tracking-wide leading-relaxed w-full md:w-2/5 capitalize">
+               <p className="text-3xl md:text-6xl tracking-wide font-bold leading-relaxed w-full md:w-2/5 capitalize">
                   I develop website , mobile app and user interfaces
                </p>
                <div className="flex justify-between items-end">
