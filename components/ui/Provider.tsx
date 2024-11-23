@@ -2,6 +2,7 @@
 import React from "react";
 import SmoothScroll from "./SmoothScroll";
 import { ContextProvider } from "@/utils/context";
+import { Cursor } from "./Cursor";
 
 export default function Provider({
    children,
@@ -9,7 +10,10 @@ export default function Provider({
    return (
       <div>
          <SmoothScroll>
-            <ContextProvider>{children}</ContextProvider>
+            <ContextProvider>
+               <Cursor />
+               {children}
+            </ContextProvider>
          </SmoothScroll>
       </div>
    );
