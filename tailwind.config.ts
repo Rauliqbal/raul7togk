@@ -1,14 +1,17 @@
 import type { Config } from "tailwindcss";
 
-const config: Config = {
+export default {
    content: [
-      "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
-      "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
-      "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+      "./pages/**/*.{js,ts,jsx,tsx,mdx}",
+      "./components/**/*.{js,ts,jsx,tsx,mdx}",
+      "./app/**/*.{js,ts,jsx,tsx,mdx}",
    ],
-   darkMode: ["class"],
    theme: {
       extend: {
+         fontFamily: {
+            "instrument-sans": ["var(--font-instrument-sans)"],
+            "inter-thin": ["var(--font-inter-tight)"],
+         },
          container: {
             center: true,
          },
@@ -36,5 +39,4 @@ const config: Config = {
       },
    },
    plugins: [],
-};
-export default config;
+} satisfies Config;
