@@ -22,6 +22,7 @@ const interTight = Inter_Tight({
 });
 
 const yelloTail = Yellowtail({
+   subsets: ["latin"],
    weight: "400",
    variable: "--font-yellow-tail",
 });

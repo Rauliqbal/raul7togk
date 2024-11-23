@@ -1,5 +1,7 @@
 import About from "@/components/About";
+import Contact from "@/components/Contact";
 import Experience from "@/components/Experience";
+import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import Motivation from "@/components/Motivation";
@@ -21,7 +23,8 @@ export default function Home() {
          <Service />
          <Motivation />
          <Experience experience={EXPERIENCE} />
-         <div className="h-screen"></div>
+         <Contact />
+         <Footer />
       </>
    );
 }
