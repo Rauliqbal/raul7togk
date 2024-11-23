@@ -15,8 +15,8 @@ export default function Home() {
          <ScrollText />
          <Projects data={PROJECTS} />
          <About />
-         <Service />
          <VelocityText />
+         <Service />
          <div className="h-screen"></div>
       </>
    );

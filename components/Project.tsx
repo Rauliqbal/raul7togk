@@ -44,26 +44,31 @@ const ProjectContainer = () => {
 
    return (
       <AnimatePresence>
-         <motion.div
-            layout
-            className="grid md:grid-cols-2 grid-cols-1 md:gap-6 gap-3"
-         >
-            {filteredProjects
-               .slice(0, showMore ? filteredProjects.length : numProjectToShow)
-               .map((project, index) => (
-                  <Transition
-                     transition={{ delay: 0.2 + index * 0.1 }}
-                     viewport={{ once: true }}
-                     key={project.id}
-                     onClick={() => {
-                        // setShowDialog(true);
-                        setSingleProject(project);
-                     }}
-                  >
-                     <Card {...project} />
-                  </Transition>
-               ))}
-         </motion.div>
+         <Transition>
+            <motion.div
+               layout
+               className="grid md:grid-cols-2 grid-cols-1 md:gap-6 gap-3"
+            >
+               {filteredProjects
+                  .slice(
+                     0,
+                     showMore ? filteredProjects.length : numProjectToShow
+                  )
+                  .map((project, index) => (
+                     <Transition
+                        transition={{ delay: 0.2 + index * 0.1 }}
+                        viewport={{ once: true }}
+                        key={project.id}
+                        onClick={() => {
+                           // setShowDialog(true);
+                           setSingleProject(project);
+                        }}
+                     >
+                        <Card {...project} />
+                     </Transition>
+                  ))}
+            </motion.div>
+         </Transition>
          <div className="grid place-items-center py-8">
             {filteredProjects.length > numProjectToShow && (
                <Button onClick={() => setShowMore(!showMore)}>

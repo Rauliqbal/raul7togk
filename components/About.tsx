@@ -1,20 +1,22 @@
+"use client";
 import React from "react";
 import Parallax from "./ui/Parallax";
 import { SectionHeading } from "./ui/Typography";
-import { SlideIn } from "./ui/Transition";
+import { SlideIn, Transition } from "./ui/Transition";
 import Image from "next/image";
 
 export default function About() {
    return (
       <section className="px-4 md:px-8 relative">
          <span className="blob absolute top-[20%] left-0 w-1/3 h-5/6 blur-[100px] -z-10" />
-         <div className="flex justify-center my-8">
+
+         <Transition className="flex justify-center my-8">
             <SectionHeading className="text-center">
                <SlideIn className="text-white/40">MORE ABOUT</SlideIn>
                <br />
                <SlideIn>RAUL IQBAL</SlideIn>
             </SectionHeading>
-         </div>
+         </Transition>
          <Parallax background="/images/me.jpg" />
          <div className="md:hidden overflow-hidden rounded-2xl h-80 max-w-96 mx-auto">
             <Image
@@ -25,7 +27,7 @@ export default function About() {
                height={500}
             />
          </div>
-         <div className="flex flex-col justify-center my-10 max-w-[60rem]  mx-auto">
+         <Transition className="flex flex-col justify-center my-10 max-w-[60rem]  mx-auto">
             <p className="text-base md:text-3xl font-bold tracking-wide leading-relaxed uppercase text-center   font-inter-thin">
                I&apos;M AN FRONT-END DEVELOPER AND UI/UX DESIGNER. MY PASSION IS
                BUILDING RESPONSIVE WEBSITE APPLICATIONS THAT LOOK COOL AND ARE
@@ -38,7 +40,7 @@ export default function About() {
                believe that with the right perspective, design can enhance the
                human experience.
             </p>
-         </div>
+         </Transition>
       </section>
    );
 }
