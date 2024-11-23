@@ -1,4 +1,4 @@
-import { Project, Service, Skill, SocialMedia } from "./interfaces";
+import { Experience, Project, Service, Skill, SocialMedia } from "./interfaces";
 
 export const USER = {
    user: {
@@ -825,5 +825,38 @@ export const SOCIAL_MEDIA: SocialMedia[] = [
       platform: "Youtube",
       url: "https://www.youtube.com/channel/UCklGTRJJjc00lK-qF3L_CRQ",
       image: "https://portfolio-image-store.s3.ap-south-1.amazonaws.com/1708718346601-xldm.webp",
+   },
+];
+
+export const EXPERIENCE: Experience[] = [
+   {
+      company_name: "HI Studio",
+      summary:
+         "Bringing creativity, technical expertise, and a passion for design to every project.",
+      startDate: "2022",
+      endDate: "2023",
+      jobTitle: "Web Designer",
+      bulletPoints: [
+         "Developed scalable backend services using Python and Django framework.",
+         "\nImplemented user authentication and authorization using OAuth 2.0 and JWT tokens.",
+         "\nDesigned and optimized database schemas for performance and scalability.",
+         "\nImplemented real-time messaging features using WebSockets and Redis.",
+         "\nWorked closely with frontend developers to design APIs and ensure smooth integration with the frontend.",
+      ],
+   },
+   {
+      company_name: "Freelance",
+      summary:
+         "Building websites with full functionality and interaction in mind with a responsive look.",
+      startDate: "2023",
+      endDate: "2024",
+      jobTitle: "Front-End Developer",
+      bulletPoints: [
+         "Developed scalable backend services using Python and Django framework.",
+         "\nImplemented user authentication and authorization using OAuth 2.0 and JWT tokens.",
+         "\nDesigned and optimized database schemas for performance and scalability.",
+         "\nImplemented real-time messaging features using WebSockets and Redis.",
+         "\nWorked closely with frontend developers to design APIs and ensure smooth integration with the frontend.",
+      ],
    },
 ];

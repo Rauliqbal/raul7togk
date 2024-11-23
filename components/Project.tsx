@@ -11,7 +11,6 @@ import { ProjectsProvider, useProjects } from "@/utils/projectContext";
 import { SectionHeading, TextReveal } from "./ui/Typography";
 import { SlideIn, Transition } from "./ui/Transition";
 import { useMediaQuery } from "@/utils/useMediaQuery";
-import { Button } from "./ui/Button";
 
 interface ProjectProps {
    data: Project[];
