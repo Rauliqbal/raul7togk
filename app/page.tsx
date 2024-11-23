@@ -1,8 +1,9 @@
 import About from "@/components/About";
 import Header from "@/components/Header";
-import { Hero } from "@/components/Hero";
+import Hero from "@/components/Hero";
 import Projects from "@/components/Project";
-import { ScrollText } from "@/components/ScrollText";
+import ScrollText from "@/components/ScrollText";
+import Service from "@/components/Service";
 import { PROJECTS, SOCIAL_MEDIA } from "@/utils/data";
 
 export default function Home() {
@@ -13,6 +14,8 @@ export default function Home() {
          <ScrollText />
          <Projects data={PROJECTS} />
          <About />
+         <Service />
+
          <div className="h-screen"></div>
       </>
    );

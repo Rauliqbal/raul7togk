@@ -12,7 +12,7 @@ import Link from "next/link";
 interface HeaderProps {
    social: SocialMedia[];
 }
-const Header = ({ social }: HeaderProps) => {
+export default function Header({ social }: HeaderProps) {
    const [isActive, setIsActive] = useState(false);
    const isMobile = useMediaQuery("(max-width:768px)");
 
@@ -46,9 +46,7 @@ const Header = ({ social }: HeaderProps) => {
          />
       </motion.div>
    );
-};
-
-export default Header;
+}
 
 function Button({
    isActive,

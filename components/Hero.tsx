@@ -7,7 +7,7 @@ import { PageLoader } from "./ui/PageLoader";
 import { SlideIn, Transition } from "./ui/Transition";
 import { TextReveal } from "./ui/Typography";
 
-export const Hero = () => {
+export default function Hero() {
    const [hideLoader, setHideLoader] = useState(true); // Default True
 
    return (
@@ -18,7 +18,7 @@ export const Hero = () => {
          {hideLoader ? (
             <PageLoader hideLoader={hideLoader} setHideLoader={setHideLoader} />
          ) : (
-            <div className="px-4 md:px-8">
+            <div className="w-full px-4 md:px-8">
                <div className="flex items-center justify-center flex-col h-[90vh]">
                   <div className="py-6 flex items-center flex-col">
                      <h1 className="md:text-9xl text-5xl font-bold overflow-hidden text-center font-instrument-sans">
@@ -28,7 +28,7 @@ export const Hero = () => {
                         </SlideIn>
                      </h1>
                   </div>
-                  <Transition viewport={{ once: true }} className="w-full">
+                  <Transition viewport={{ once: true }}>
                      <p className="text-secondary text-center md:text-xl py-4 w-10/12 md:w-2/3 mx-auto flex flex-wrap justify-center gap-2">
                         I am a developer and designer who has a passion for
                         building responsive, cool looking, and easy to visit
@@ -48,19 +48,21 @@ export const Hero = () => {
                      </Link>
                   </Transition>
                </div>
+               <Transition
+                  viewport={{ once: true }}
+                  className="justify-between hidden md:flex w-full px-6"
+               >
+                  <p className="text-lg font-medium">
+                     BASED IN BEKASI
+                     <span className="text-white/40">, INDONESIA</span>
+                  </p>
+                  <p className="text-lg font-medium">
+                     FRONT-END DEVELOPER{" "}
+                     <span className="text-white/40">+ UI DESIGNER</span>
+                  </p>
+               </Transition>
             </div>
          )}
-
-         <Transition className="justify-between hidden md:flex w-full px-6">
-            <p className="text-lg font-medium">
-               BASED IN BEKASI
-               <span className="text-white/40">, INDONESIA</span>
-            </p>
-            <p className="text-lg font-medium">
-               FRONT-END DEVELOPER{" "}
-               <span className="text-white/40">+ UI DESIGNER</span>
-            </p>
-         </Transition>
       </section>
    );
-};
+}

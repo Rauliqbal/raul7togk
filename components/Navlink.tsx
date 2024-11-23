@@ -36,7 +36,7 @@ interface NavProps {
    social: SocialMedia[];
 }
 
-const Navlink = ({ setIsActive, social }: NavProps) => {
+export default function Navlink({ setIsActive, social }: NavProps) {
    const MotionLink = motion(Link);
 
    return (
@@ -108,6 +108,4 @@ const Navlink = ({ setIsActive, social }: NavProps) => {
          </motion.div>
       </div>
    );
-};
-
-export default Navlink;
+}

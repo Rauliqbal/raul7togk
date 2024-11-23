@@ -768,19 +768,22 @@ export const PROJECTS: Project[] = [
 
 export const SERVICES: Service[] = [
    {
+      id: 1,
       name: "Web Development",
       desc: "Craft intuitive navigation that makes features accessible. Choose layouts and graphics that fit your app's personality.",
-      image: "https://portfolio-image-store.s3.ap-south-1.amazonaws.com/portfolio3/1710364293287-4q1ngo.webp",
+      image: "web-development.webp",
    },
    {
+      id: 2,
       name: "App Development",
       desc: "I build brands through cultural insights & strategic vision. Custom crafted business solutions.",
-      image: "https://portfolio-image-store.s3.ap-south-1.amazonaws.com/portfolio3/1710357775748-9vwq4q.jpeg",
+      image: "app-development.webp",
    },
    {
+      id: 3,
       name: "UI/UX Designer",
       desc: "Design direction for business. Get your business on the next level. We help to create great experiences.",
-      image: "https://portfolio-image-store.s3.ap-south-1.amazonaws.com/1706290914024-725ytf",
+      image: "uiux-designer.webp",
    },
 ];
 

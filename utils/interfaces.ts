@@ -45,6 +45,7 @@ export interface SocialMedia {
 }
 
 export interface Service {
+   id: number;
    name: string;
    desc: string;
    image: string;

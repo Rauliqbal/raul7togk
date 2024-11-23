@@ -1,7 +1,7 @@
 import { Sparkle } from "lucide-react";
 import Marquee from "./ui/Marquee";
 
-export function ScrollText() {
+export default function ScrollText() {
    return (
       <section className="overflow-hidden py-8">
          <div className="relative flex flex-col items-center justify-center overflow-hidden py-3 bg-gradient-to-br from-primary to-indigo-400 -rotate-1">

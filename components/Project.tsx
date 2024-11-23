@@ -17,7 +17,7 @@ interface ProjectProps {
    data: Project[];
 }
 
-const Projects = ({ data }: ProjectProps) => {
+export default function Projects({ data }: ProjectProps) {
    return (
       <ProjectsProvider data={data}>
          <section className="md:px-10 px-4 relative" id="projects">
@@ -31,9 +31,7 @@ const Projects = ({ data }: ProjectProps) => {
          </section>
       </ProjectsProvider>
    );
-};
-
-export default Projects;
+}
 
 const ProjectContainer = () => {
    const { filteredProjects, setSingleProject } = useProjects();
