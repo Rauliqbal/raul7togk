@@ -4,7 +4,7 @@
 
 @layer base {
    body {
-      @apply bg-[#07070f] text-white overflow-x-hidden font-instrument-sans;
+      @apply bg-[#07070f] text-white overflow-x-hidden font-inter-thin;
    }
 
    *::-webkit-scrollbar-thumb {

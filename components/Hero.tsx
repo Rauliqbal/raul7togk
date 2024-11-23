@@ -21,7 +21,7 @@ export const Hero = () => {
             <div className="px-4 md:px-8">
                <div className="flex items-center justify-center flex-col h-[90vh]">
                   <div className="py-6 flex items-center flex-col">
-                     <h1 className="md:text-9xl text-5xl font-bold overflow-hidden text-center">
+                     <h1 className="md:text-9xl text-5xl font-bold overflow-hidden text-center font-instrument-sans">
                         <SlideIn>
                            MUHAMAD <br />
                            RAUL IQBAL
