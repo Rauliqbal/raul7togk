@@ -7,7 +7,7 @@ import Image from "next/image";
 
 export default function About() {
    return (
-      <section className="px-4 md:px-8 relative">
+      <section id="about" className="px-4 md:px-8 relative">
          <span className="blob absolute top-[20%] left-0 w-1/3 h-5/6 blur-[100px] -z-10" />
 
          <Transition className="flex justify-center my-8">
