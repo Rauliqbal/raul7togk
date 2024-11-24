@@ -4,7 +4,6 @@ import { motion } from "framer-motion";
 import { useState } from "react";
 import { PerspectiveText, SectionHeading } from "./ui/Typography";
 import { SlideIn, Transition } from "./ui/Transition";
-import { formatDate } from "@/utils/formatDate";
 import type { Experience } from "@/utils/interfaces";
 
 interface ExperienceProps {
@@ -38,13 +37,9 @@ export default function Experience({ experience }: ExperienceProps) {
                         </PerspectiveText>
                      </div>
                      <div className="max-md:text-sm max-md:flex flex-col text-foreground/50">
-                        <span className="italic">
-                           {formatDate(exp.startDate).year}
-                        </span>
+                        <span className="italic">{exp.startDate}</span>
                         <span className="max-md:hidden">{" - "}</span>
-                        <span className="italic">
-                           {formatDate(exp.endDate).year}
-                        </span>
+                        <span className="italic">{exp.endDate}</span>
                      </div>
                   </div>
                   <div className="md:pl-12 py-2 text-foreground/50 max-md:text-sm flex items-center justify-between">

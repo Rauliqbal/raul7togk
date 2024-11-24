@@ -8,8 +8,8 @@ import Link from "next/link";
 
 export default function Contact() {
    return (
-      <section id="contact" className="px-4 md:px-8 relative text-center">
-         <span className="blob absolute top-[20%] -right-40 rotate-90 w-1/3 h-5/6 blur-[100px] -z-10" />
+      <section id="contact" className="px-4 md:px-8 relative text-center ">
+         <span className="  blob absolute top-[20%] right-0 md:-right-40 rotate-90 w-1/3 h-5/6 blur-[100px] -z-10" />
 
          <Transition className="flex justify-center ">
             <SectionHeading className="text-center">

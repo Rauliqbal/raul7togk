@@ -13,7 +13,7 @@ import { EXPERIENCE, PROJECTS, SOCIAL_MEDIA } from "@/utils/data";
 
 export default function Home() {
    return (
-      <>
+      <div className="overflow-hidden">
          <Header social={SOCIAL_MEDIA} />
          <Hero />
          <ScrollText />
@@ -25,6 +25,6 @@ export default function Home() {
          <Experience experience={EXPERIENCE} />
          <Contact />
          <Footer />
-      </>
+      </div>
    );
 }
