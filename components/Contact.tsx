@@ -28,9 +28,9 @@ export default function Contact() {
 
          <Transition className="flex flex-col justify-center  max-w-[60rem] mt-14 mx-auto">
             <p className="text-base md:text-3xl font-bold tracking-wide leading-relaxed uppercase text-center   font-inter-thin">
-               BASED IN TOKYO, I&apos;M AN DEVELOPER AND INNOVATIVE DESIGNER. MY
-               PASSION FOR MINIMALIST AESTHETICS, ELEGANT TYPOGRAPHY, AND
-               INTUITIVE DESIGN IS EVIDENT IN MY WORK.
+               I&apos;M AN DEVELOPER AND INNOVATIVE DESIGNER. MY PASSION FOR
+               MINIMALIST AESTHETICS, ELEGANT TYPOGRAPHY, AND INTUITIVE DESIGN
+               IS EVIDENT IN MY WORK.
             </p>
          </Transition>
       </section>

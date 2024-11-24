@@ -7,7 +7,7 @@ import Image from "next/image";
 export default function Motivation() {
    return (
       <section>
-         <div className="grid lg:grid-cols-1 xl:grid-cols-3 md:gap-10 pb-20 px-4 md:px-8">
+         <div className="grid xl:grid-cols-1 2xl:grid-cols-3 md:gap-10 pb-20 px-4 md:px-8">
             <Transition className="col-span-1">
                <SectionHeading>
                   <SlideIn className="text-white/40">MY</SlideIn>

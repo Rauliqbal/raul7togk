@@ -7,6 +7,14 @@ export const metadata: Metadata = {
    title: "Rauliqbal - Front-End Dev and UI Designer",
    description:
       "I am a developer and designer who has a passion for building responsive, cool looking, and easy to visit website applications.",
+   keywords: [
+      "rauliqbal",
+      "muhamad raul iqbal",
+      "raul iqbal",
+      "raul",
+      "web developer",
+      "raul front end",
+   ],
 };
 
 const instrumentSans = Instrument_Sans({
