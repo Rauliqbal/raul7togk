@@ -8,7 +8,7 @@ import { SlideIn, Transition } from "./ui/Transition";
 import { TextReveal } from "./ui/Typography";
 
 export default function Hero() {
-   const [hideLoader, setHideLoader] = useState(true); // Default True
+   const [hideLoader, setHideLoader] = useState(false); // Default True
 
    return (
       <section className="relative flex h-screen w-full flex-col items-center justify-center overflow-hidden ">
