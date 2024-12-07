@@ -7,11 +7,12 @@ import { Dispatch, SetStateAction } from "react";
 import { SocialMedia } from "@/utils/interfaces";
 import { perspective, slideIn } from "@/utils/animation";
 import { TextReveal } from "./ui/Typography";
+import { useLenis } from "lenis/react";
 
 export const navLinks = [
    {
       title: "Home",
-      href: "/",
+      href: "#hero",
    },
    {
       title: "Projects",
@@ -38,6 +39,7 @@ interface NavProps {
 
 export default function Navlink({ setIsActive, social }: NavProps) {
    const MotionLink = motion(Link);
+   const lenis = useLenis();
 
    return (
       <div className="flex justify-between flex-col w-full  h-full px-10 pt-[100px] pb-[50px]">
@@ -50,8 +52,10 @@ export default function Navlink({ setIsActive, social }: NavProps) {
                      className="linkContainer"
                      onClick={() => setIsActive(false)}
                   >
-                     <Link
-                        href={href}
+                     <button
+                        onClick={() => {
+                           lenis?.scrollTo(href);
+                        }}
                         className="flex flex-wrap overflow-hidden"
                      >
                         <motion.div
@@ -81,7 +85,7 @@ export default function Navlink({ setIsActive, social }: NavProps) {
                               {title}
                            </motion.span>
                         </motion.div>
-                     </Link>
+                     </button>
                   </div>
                );
             })}

@@ -1,8 +1,11 @@
+"use client";
+import { useLenis } from "lenis/react";
 import Link from "next/link";
 import React from "react";
 
 export default function Footer() {
    const date = new Date();
+   const lenis = useLenis();
 
    return (
       <footer className="px-4 md:px-8">
@@ -14,7 +17,13 @@ export default function Footer() {
                <p>&copy; {`${date.getFullYear()} RAULIQBAL`}</p>
             </div>
 
-            <Link href={"/"}>GO BACK TO TOP</Link>
+            <button
+               onClick={() => {
+                  lenis?.scrollTo("#hero");
+               }}
+            >
+               GO BACK TO TOP
+            </button>
          </div>
       </footer>
    );

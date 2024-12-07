@@ -6,12 +6,16 @@ import { useState } from "react";
 import { PageLoader } from "./ui/PageLoader";
 import { SlideIn, Transition } from "./ui/Transition";
 import { TextReveal } from "./ui/Typography";
+import { useLenis } from "lenis/react";
 
 export default function Hero() {
-   const [hideLoader, setHideLoader] = useState(false); // Default True
-
+   const [hideLoader, setHideLoader] = useState(true); // Default True
+   const lenis = useLenis();
    return (
-      <section className="relative flex h-screen w-full flex-col items-center justify-center overflow-hidden ">
+      <section
+         id="hero"
+         className="relative flex h-screen w-full flex-col items-center justify-center overflow-hidden "
+      >
          <span className="blob size-1/4 absolute top-20 left-0 blur-[100px] -z-10" />
          <span className="blob w-1/4 h-2/3 absolute -right-40 rotate-180 bottom-52 blur-[100px] -z-10" />
 
@@ -36,8 +40,10 @@ export default function Hero() {
                      </p>
                   </Transition>
                   <Transition viewport={{ once: true }}>
-                     <Link
-                        href={"#contact"}
+                     <button
+                        onClick={() => {
+                           lenis?.scrollTo("#contact");
+                        }}
                         className="px-5 py-3 mt-4 rounded-full border border-white/50 flex items-center gap-4 group"
                      >
                         <TextReveal>Let&apos;s talk</TextReveal>
@@ -45,7 +51,7 @@ export default function Hero() {
                            size={20}
                            className="group-hover:rotate-90 transition-transform"
                         />
-                     </Link>
+                     </button>
                   </Transition>
                </div>
                <Transition
