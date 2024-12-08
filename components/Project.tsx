@@ -11,6 +11,7 @@ import { ProjectsProvider, useProjects } from "@/utils/projectContext";
 import { SectionHeading, TextReveal } from "./ui/Typography";
 import { SlideIn, Transition } from "./ui/Transition";
 import { useMediaQuery } from "@/utils/useMediaQuery";
+import Link from "next/link";
 
 interface ProjectProps {
    data: Project[];
@@ -82,7 +83,7 @@ const ProjectContainer = () => {
    );
 };
 
-const Card = ({ title, image }: Project) => {
+const Card = ({ title, image, liveurl, category }: Project) => {
    const [hover, setHover] = useState(false);
    const { setVariant } = useCursorVariants();
 
@@ -107,7 +108,11 @@ const Card = ({ title, image }: Project) => {
                <ArrowUpRight size={20} />
             </div>
          </div>
-         <div className="flex flex-col gap-4 md:gap-8">
+         <Link
+            href={liveurl}
+            target="_blank"
+            className="flex flex-col gap-4 md:gap-8"
+         >
             <div className="overflow-hidden rounded-xl md:rounded-2xl">
                <Image
                   src={image}
@@ -139,11 +144,11 @@ const Card = ({ title, image }: Project) => {
                      animate={{ y: hover ? -10 : 0, opacity: hover ? 1 : 0 }}
                      className="absolute text-white/50"
                   >
-                     Lorem ipsum dolor sit amet.
+                     {category}
                   </motion.p>
                </div>
             </div>
-         </div>
+         </Link>
       </motion.div>
    );
 };
