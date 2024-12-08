@@ -2,9 +2,10 @@
 import React, { FormEvent, useState } from "react";
 import { SectionHeading, TextReveal } from "./ui/Typography";
 import { SlideIn, Transition } from "./ui/Transition";
-import Link from "next/link";
 import { sendMail } from "@/lib/send-mail";
 import { Button } from "./ui/Button";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 export default function Contact() {
    const [name, setName] = useState("");
@@ -23,11 +24,28 @@ export default function Contact() {
          subject: subject,
          detail: detail,
       })
-         .then(() => console.log("Pesan Terkirim"))
-         .catch((err) => console.error("Message: ", err));
+         .then(() => {
+            toast.success("Message sent, and will be replied soon!");
+            setName("");
+            setEmail("");
+            setSubject("");
+            setDetail("");
+            setIsLoading(false);
+         })
+         .catch((err) => {
+            toast.error("Message failed to send, there is a problem");
+         });
    }
    return (
       <section id="contact" className="px-4 md:px-8 relative text-center ">
+         <ToastContainer
+            position="top-right"
+            theme="dark"
+            closeOnClick
+            draggable
+            pauseOnFocusLoss
+            pauseOnHover={false}
+         />
          <span className="  blob absolute top-[20%] right-0 md:-right-40 rotate-90 w-1/3 h-5/6 blur-[100px] -z-10" />
 
          <Transition className="flex justify-center ">

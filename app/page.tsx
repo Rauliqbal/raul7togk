@@ -24,6 +24,7 @@ export default function Home() {
          <Motivation />
          <Experience experience={EXPERIENCE} />
          <Contact />
+
          <Footer />
       </div>
    );
