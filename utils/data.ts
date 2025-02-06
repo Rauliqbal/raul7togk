@@ -104,13 +104,13 @@ export const SOCIAL_MEDIA: SocialMedia[] = [
 ];
 
 export const EXPERIENCE: Experience[] = [
+   
    {
-      company_name: "HI Studio",
-      summary:
-         "Bringing creativity, technical expertise, and a passion for design to every project.",
-      startDate: "2022",
-      endDate: "2023",
-      jobTitle: "Web Designer",
+      company_name: "Freelance",
+      summary: "Building websites with full functionality and interaction in mind with a responsive look.",
+      startDate: 2022,
+      endDate: "2024",
+      jobTitle: "Web Developer",
       bulletPoints: [
          "Developed scalable backend services using Python and Django framework.",
          "\nImplemented user authentication and authorization using OAuth 2.0 and JWT tokens.",
@@ -118,12 +118,12 @@ export const EXPERIENCE: Experience[] = [
          "\nImplemented real-time messaging features using WebSockets and Redis.",
          "\nWorked closely with frontend developers to design APIs and ensure smooth integration with the frontend.",
       ],
+      frontmatter: undefined
    },
    {
-      company_name: "Freelance",
-      summary:
-         "Building websites with full functionality and interaction in mind with a responsive look.",
-      startDate: "2023",
+      company_name: "Elemes Group",
+      summary: "Building the appearance of the website using the slicing design method with a responsive appearance and optimizing the website from the client side",
+      startDate: 2025,
       endDate: "PRESENT",
       jobTitle: "Front-End Developer",
       bulletPoints: [
@@ -133,5 +133,8 @@ export const EXPERIENCE: Experience[] = [
          "\nImplemented real-time messaging features using WebSockets and Redis.",
          "\nWorked closely with frontend developers to design APIs and ensure smooth integration with the frontend.",
       ],
+      frontmatter: undefined
    },
+
+   
 ];

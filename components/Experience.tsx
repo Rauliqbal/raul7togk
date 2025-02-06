@@ -13,6 +13,14 @@ interface ExperienceProps {
 export default function Experience({ experience }: ExperienceProps) {
    const [hover, setHover] = useState<number | null>(null);
 
+  const sortExperience = experience.sort((a,b) => {
+    const beforeDate = a.startDate
+    const afterDate = b.startDate
+
+
+    return afterDate - beforeDate
+  })
+
    return (
       <section className="relative ">
          <span className="blob absolute top-[20%] left-0 w-1/3 h-5/6 blur-[100px] -z-10" />
@@ -22,7 +30,7 @@ export default function Experience({ experience }: ExperienceProps) {
             <SlideIn>History</SlideIn>
          </SectionHeading>
          <div>
-            {experience.map((exp, index) => (
+            {experience && sortExperience.map((exp, index) => (
                <Transition
                   key={index}
                   className="py-4 md:py-8 border-b border-white/10 hover:bg-white/5 px-2 md:px-12"

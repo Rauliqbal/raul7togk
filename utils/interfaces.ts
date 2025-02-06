@@ -37,9 +37,10 @@ export interface Service {
 // }
 
 export interface Experience {
+   frontmatter: any;
    company_name: string;
    summary: string;
-   startDate: string;
+   startDate: number;
    endDate: string;
    jobTitle: string;
    bulletPoints: string[];
