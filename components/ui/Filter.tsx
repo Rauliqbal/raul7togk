@@ -9,7 +9,7 @@ import { useProjects } from "@/utils/projectContext";
 
 const Filters = () => {
    const { setAppliedFilter, appliedFilter } = useProjects();
-   const filters = ["React JS", "Vue JS"];
+   const filters = ["Website", "Mobile App", "UI Design"];
    return (
       <div className="flex items-center gap-4 py-8 justify-center max-md:flex-wrap">
          <Transition viewport={{ once: true }}>

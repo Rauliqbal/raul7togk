@@ -9,6 +9,7 @@ import React, {
    SetStateAction,
 } from "react";
 import { Project } from "./interfaces";
+import { filter } from "framer-motion/client";
 
 interface ProjectContextProps {
    projects: Project[];
@@ -59,7 +60,7 @@ const ProjectsProvider = ({
       }
 
       return data.filter((project) =>
-         project.techStack.some((tech) => filterValues === tech.trim())
+         project.category && project.category.trim().toLowerCase() === filterValues.toLowerCase()
       );
    };
 

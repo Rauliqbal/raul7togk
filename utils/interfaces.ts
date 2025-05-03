@@ -10,7 +10,6 @@ export interface Project {
    category: string;
    image: string;
    description: string;
-   techStack: string[];
 }
 
 export interface SocialMedia {

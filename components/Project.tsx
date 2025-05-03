@@ -60,25 +60,15 @@ const ProjectContainer = () => {
                         viewport={{ once: true }}
                         key={project.id}
                         onClick={() => {
-                           // setShowDialog(true);
                            setSingleProject(project);
                         }}
                      >
-                        <Card {...project} />
+                        <Card image={`/images/work/${project.image}`} id={project.id} liveurl={project.liveurl} githuburl={project.githuburl} title={project.title} category={project.category} description={project.description}  />
                      </Transition>
                   ))}
             </motion.div>
          </Transition>
-         {/* <div className="grid place-items-center py-8">
-            {filteredProjects.length > numProjectToShow && (
-               <Button onClick={() => setShowMore(!showMore)}>
-                  <TextReveal>
-                     {showMore ? "Show less" : "Show more"}
-                  </TextReveal>
-               </Button>
-            )}
-         </div> */}
-         {/* <Dialog showDialog={showDialog} setShowDialog={setShowDialog} /> */}
+        
       </AnimatePresence>
    );
 };

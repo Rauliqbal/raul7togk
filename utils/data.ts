@@ -6,22 +6,60 @@ export const PROJECTS: Project[] = [
       liveurl: "https://azurakit.vercel.app",
       githuburl: "#",
       title: "Azurakit",
-      category: "Marketplace",
-      image: "https://sfveuafbpwhmzfiorbis.supabase.co/storage/v1/object/public/project/azurakit-preview.png",
+      category: "Website",
+      image: "azurakit.png",
       description:
          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
-      techStack: ["React JS", " Next JS ", " Tailwind CSS "],
    },
    {
       id: 2,
-      liveurl: "https://movieraa.vercel.app",
+      liveurl: "https://dribbble.com/shots/19624105-FurniLux-Furniture-Landing-Page",
       githuburl: "#",
-      title: "Movieeraa",
-      category: "Web Development",
-      image: "https://sfveuafbpwhmzfiorbis.supabase.co/storage/v1/object/public/project/movieraa-preview.png",
+      title: "Furnilux - Furniture E-commerce",
+      category: "ui design",
+      image: "furnilux.png",
       description:
          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
-      techStack: ["Vue JS", " Tailwind ", " Rest API "],
+   },
+   {
+      id: 3,
+      liveurl: "https://iratoon.vercel.app",
+      githuburl: "#",
+      title: "Iratoon - Streaming Anime",
+      category: "Website",
+      image: "iratoon-web.png",
+      description:
+         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
+   },
+   {
+      id: 4,
+      liveurl: "https://ngajee.web.id",
+      githuburl: "#",
+      title: "Ngajee - Al Qur'an Indonesia",
+      category: "Mobile App",
+      image: "ngajee-app.png",
+      description:
+         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
+   },
+   {
+      id: 5,
+      liveurl: "https://azurakit-weserve.vercel.app/",
+      githuburl: "#",
+      title: " WeServe - Hosting Landing Page",
+      category: "Website",
+      image: "weserve.png",
+      description:
+         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
+   },
+   {
+      id: 6,
+      liveurl: "https://nightcoder-website.vercel.app",
+      githuburl: "#",
+      title: "NightCoder Community",
+      category: "Website",
+      image: "nightcoder.png",
+      description:
+         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
    },
 ];
 
