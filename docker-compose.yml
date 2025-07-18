@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  nextjs-app:
+    container_name: raul
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: unless-stopped
